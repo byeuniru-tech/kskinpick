@@ -5,6 +5,8 @@ import Container from "@/components/layout/Container";
 import { featuredBlogPosts } from "@/lib/data/en/blog";
 
 export default function BlogPreview() {
+  const visibleBlogPosts = featuredBlogPosts.slice(0, 3);
+
   return (
     <section className="bg-[#fbf7f2] py-16 md:py-24">
       <Container>
@@ -34,11 +36,20 @@ export default function BlogPreview() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
-          {featuredBlogPosts.map((post) => (
+          {visibleBlogPosts.map((post, index) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group overflow-hidden rounded-[1.6rem] border border-[#eadfd7] bg-white shadow-[0_12px_35px_rgba(16,24,39,0.04)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(16,24,39,0.08)]"
+              className={`
+                group overflow-hidden rounded-[1.6rem]
+                border border-[#eadfd7]
+                bg-white
+                shadow-[0_12px_35px_rgba(16,24,39,0.04)]
+                transition
+                hover:-translate-y-1
+                hover:shadow-[0_20px_50px_rgba(16,24,39,0.08)]
+                ${index >= 2 ? "hidden md:block" : ""}
+              `}
             >
               <div className="h-44 overflow-hidden bg-[#f4eee8]">
                 <img

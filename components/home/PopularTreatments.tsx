@@ -5,6 +5,8 @@ import Container from "@/components/layout/Container";
 import { featuredTreatments } from "@/lib/data/en/treatments";
 
 export default function PopularTreatments() {
+  const visibleTreatments = featuredTreatments.slice(0, 3);
+
   return (
     <section className="bg-white py-16 md:py-24">
       <Container>
@@ -34,11 +36,19 @@ export default function PopularTreatments() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
-          {featuredTreatments.map((treatment) => (
+          {visibleTreatments.map((treatment, index) => (
             <Link
               key={treatment.slug}
               href={`/treatments/${treatment.slug}`}
-              className="group overflow-hidden rounded-[1.6rem] border border-[#eadfd7] bg-[#fbf7f2] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(16,24,39,0.08)]"
+              className={`
+                group overflow-hidden rounded-[1.6rem]
+                border border-[#eadfd7]
+                bg-[#fbf7f2]
+                transition
+                hover:-translate-y-1
+                hover:shadow-[0_18px_45px_rgba(16,24,39,0.08)]
+                ${index >= 2 ? "hidden md:block" : ""}
+              `}
             >
               <div className="h-44 overflow-hidden bg-[#f4eee8]">
                 <img
