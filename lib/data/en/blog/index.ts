@@ -1,3 +1,4 @@
+import { picoLaserInKorea } from "./pico-laser-in-korea";
 import { rejuranInKorea } from "./rejuran-in-korea";
 import { potenzaInKorea } from "./potenza-in-korea";
 import { ultherapyInKorea } from "./ultherapy-in-korea";
@@ -27,6 +28,7 @@ import { koreanSkinClinicForForeignersGuide } from "./korean-skin-clinic-for-for
 export type { BlogCategory, BlogPost } from "./types";
 
 export const blogPosts = [
+  picoLaserInKorea,
   koreanSkinClinicForForeignersGuide,
   gettingSkinTreatmentDuringKoreaTrip,
   bestAreaForSkinClinicsInSeoul,
