@@ -3,7 +3,10 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 
 export const metadata = {
-  title: "Terms of Service | KSkinPick",
+  alternates: {
+    canonical: "/terms",
+  },
+  title: "Terms of Service",
   description: "Terms of Service for KSkinPick.",
 };
 

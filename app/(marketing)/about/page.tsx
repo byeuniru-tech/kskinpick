@@ -3,6 +3,9 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 
 export const metadata = {
+  alternates: {
+    canonical: "/about",
+  },
   title: "About KSkinPick",
   description:
     "Learn why KSkinPick exists and how we help international patients compare Korean skin clinics and treatments.",

@@ -31,7 +31,7 @@ function safeJsonLd(data: unknown) {
 }
 
 export const metadata: Metadata = {
-  title: `${pageTitle} | ${siteConfig.displayName}`,
+  title: pageTitle,
   description: pageDescription,
   alternates: {
     canonical: pageUrl,

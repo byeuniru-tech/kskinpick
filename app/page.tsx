@@ -6,6 +6,13 @@ import HowItWorks from "@/components/home/HowItWorks";
 import FeaturedClinics from "@/components/home/FeaturedClinics";
 import PopularTreatments from "@/components/home/PopularTreatments";
 import BlogPreview from "@/components/home/BlogPreview";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

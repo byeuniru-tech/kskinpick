@@ -3,7 +3,10 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 
 export const metadata = {
-  title: "Privacy Policy | KSkinPick",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  title: "Privacy Policy",
   description: "Privacy Policy for KSkinPick.",
 };
 

@@ -1,0 +1,26 @@
+# K-SKINPICK
+
+> English guide platform helping international patients compare Korean skin clinics, treatments, prices, and consultation options.
+
+Website: https://www.kskinpick.com
+Language: English
+Primary audience: International patients considering skin clinics and aesthetic treatments in Korea.
+
+Important pages:
+- https://www.kskinpick.com/
+- https://www.kskinpick.com/clinics
+- https://www.kskinpick.com/treatments
+- https://www.kskinpick.com/blog
+- https://www.kskinpick.com/contact
+
+Content types:
+- Clinic directory pages
+- Treatment guide pages
+- Blog articles for foreign patients
+- Price and safety guides
+- Consultation request page
+
+Editorial notes:
+- Content is informational and not a substitute for medical advice.
+- Treatment suitability, downtime, and pricing may vary by clinic and individual condition.
+- International visitors should confirm language support, consultation availability, treatment provider, and product authenticity before booking.

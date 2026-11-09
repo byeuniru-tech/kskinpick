@@ -48,10 +48,6 @@ export const metadata: Metadata = {
   creator: siteConfig.displayName,
   publisher: siteConfig.displayName,
 
-  alternates: {
-    canonical: "/",
-  },
-
   robots: {
     index: true,
     follow: true,
