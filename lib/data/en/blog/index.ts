@@ -1,3 +1,4 @@
+import { fillerInKorea } from "./filler-in-korea";
 import { threadLiftInKorea } from "./thread-lift-in-korea";
 import { picoLaserInKorea } from "./pico-laser-in-korea";
 import { rejuranInKorea } from "./rejuran-in-korea";
@@ -29,6 +30,7 @@ import { koreanSkinClinicForForeignersGuide } from "./korean-skin-clinic-for-for
 export type { BlogCategory, BlogPost } from "./types";
 
 export const blogPosts = [
+  fillerInKorea,
   threadLiftInKorea,
   picoLaserInKorea,
   koreanSkinClinicForForeignersGuide,
